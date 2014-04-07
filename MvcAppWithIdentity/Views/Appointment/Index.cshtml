@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Appointments";
+}
+
+<h2>Appointments</h2>
+@if (Request.IsAuthenticated)
+{
+    <h3>Authenticated!</h3>
+    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+}

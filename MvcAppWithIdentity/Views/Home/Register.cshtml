@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Register</h2>
+@using(Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <p>Username: @Html.TextBox("username")</p>
+    <p>Password: @Html.Password("password")</p>
+    <p>First Name: @Html.TextBox("firstname")</p>
+    <p>Last Name: @Html.TextBox("lastname")</p>
+    <p>Birth Date: @Html.TextBox("birthdate")</p>
+    <p>Age: @Html.TextBox("age")</p>
+    <p><button>Create</button></p>
+}
+

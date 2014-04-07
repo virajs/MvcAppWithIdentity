@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "TwoFactor";
+}
+
+<h2>TwoFactor</h2>
+@using(Html.BeginForm())
+{
+    <p>Enter the code: @Html.TextBox("code")</p>
+    <p><button>Submit</button></p>
+}
